@@ -64,9 +64,19 @@ main{
 
             ul{
                 list-style: none;
+                li.erro input{
+                    border: 1px solid hsl(0, 100%, 74%);
+                }
+                li.erro img{
+                    visibility: visible;
+                }
+                li.erro p{
+                    visibility: visible;
+                }
 
                 li{
                     margin: 10px 0;
+                    position: relative;
 
                     input{
                         width: 100%;
@@ -76,6 +86,17 @@ main{
                         outline: none;
                         border: 1px solid  hsl(249, 10%, 26%);
                 
+                    }
+                    img{
+                        visibility: hidden;
+                        position: absolute;
+                        top: 17%;
+                        right: 5%;
+                    }
+                    p{
+                        visibility: hidden;
+                        text-align: right;
+                        color: hsl(0, 100%, 74%);
                     }
                 }
             }

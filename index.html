@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
-
+  <script src="/main.js" defer></script>
 </head>
 <body>
   <main>
@@ -23,17 +23,30 @@
       <div class="tryItForFree">
         <form action="#">
           <ul>
-            <li><input type="text" name="name" placeholder="Frist Name"></li>
-            <li><input type="text" name="lastName" placeholder="Last Name"></li>
-            <li><input type="email" name="email" placeholder="Email Address"></li>
-            <li><input type="password" name placeholder="Password"></li>
+            <li><input type="text" name="name" placeholder="Frist Name" id="name" > 
+              <img src="/images/icon-error.svg">
+              <p>erro message</p>
+            </li>
+            <li><input type="text" name="lastName" placeholder="Last Name" id="lastName">
+              <img src="/images/icon-error.svg">
+              <p>erro message</p>
+            </li>
+            <li><input type="email" name="email" placeholder="Email Address" id="email">
+              <img src="/images/icon-error.svg">
+              <p>erro message</p>
+            </li>
+            <li><input type="password" name placeholder="Password" id="password">
+              <img src="/images/icon-error.svg">
+              <p>erro message</p>
+            </li>
           </ul>
-          <button>Claim your free trial </button>
+          <button id="submit" onclick="pass()">Claim your free trial </button>
           <p>By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></p>
         </form>
         
       </div>
     </div>
   </main>
+  
 </body>
 </html>

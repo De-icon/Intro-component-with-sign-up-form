@@ -62,8 +62,18 @@ main .tryIt form {
 main .tryIt form ul {
   list-style: none;
 }
+main .tryIt form ul li.erro input {
+  border: 1px solid hsl(0deg, 100%, 74%);
+}
+main .tryIt form ul li.erro img {
+  visibility: visible;
+}
+main .tryIt form ul li.erro p {
+  visibility: visible;
+}
 main .tryIt form ul li {
   margin: 10px 0;
+  position: relative;
 }
 main .tryIt form ul li input {
   width: 100%;
@@ -72,6 +82,17 @@ main .tryIt form ul li input {
   border-radius: 6px;
   outline: none;
   border: 1px solid hsl(249deg, 10%, 26%);
+}
+main .tryIt form ul li img {
+  visibility: hidden;
+  position: absolute;
+  top: 17%;
+  right: 5%;
+}
+main .tryIt form ul li p {
+  visibility: hidden;
+  text-align: right;
+  color: hsl(0deg, 100%, 74%);
 }
 main .tryIt form button {
   width: 100%;
